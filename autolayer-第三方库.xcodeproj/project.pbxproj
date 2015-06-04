@@ -14,6 +14,7 @@
 		3DE689BB1B1F5EB2008EE550 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DE689BA1B1F5EB2008EE550 /* Images.xcassets */; };
 		3DE689BE1B1F5EB2008EE550 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3DE689BC1B1F5EB2008EE550 /* LaunchScreen.xib */; };
 		3DE689CA1B1F5EB2008EE550 /* autolayer_____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DE689C91B1F5EB2008EE550 /* autolayer_____Tests.m */; };
+		9371DC471EB493F1F0D8ED52 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0760FA399327C413A7D79298 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +28,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0760FA399327C413A7D79298 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		0DF88A573A1ACD38AEFCA622 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		3DE689AA1B1F5EB2008EE550 /* autolayer-第三方库.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "autolayer-第三方库.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DE689AE1B1F5EB2008EE550 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3DE689AF1B1F5EB2008EE550 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -40,6 +43,7 @@
 		3DE689C31B1F5EB2008EE550 /* autolayer-第三方库Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "autolayer-第三方库Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DE689C81B1F5EB2008EE550 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3DE689C91B1F5EB2008EE550 /* autolayer_____Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "autolayer_____Tests.m"; sourceTree = "<group>"; };
+		6D796FDDD46BE156F7272E00 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9371DC471EB493F1F0D8ED52 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +71,8 @@
 				3DE689AC1B1F5EB2008EE550 /* autolayer-第三方库 */,
 				3DE689C61B1F5EB2008EE550 /* autolayer-第三方库Tests */,
 				3DE689AB1B1F5EB2008EE550 /* Products */,
+				46DCC28363F8A836B699D5AB /* Pods */,
+				8785E3AA409E3E7A3A5DDAFE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -119,6 +126,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		46DCC28363F8A836B699D5AB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0DF88A573A1ACD38AEFCA622 /* Pods.debug.xcconfig */,
+				6D796FDDD46BE156F7272E00 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8785E3AA409E3E7A3A5DDAFE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0760FA399327C413A7D79298 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -126,9 +150,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3DE689CD1B1F5EB2008EE550 /* Build configuration list for PBXNativeTarget "autolayer-第三方库" */;
 			buildPhases = (
+				3672B9BB5FDBAEB32833A742 /* Check Pods Manifest.lock */,
 				3DE689A61B1F5EB2008EE550 /* Sources */,
 				3DE689A71B1F5EB2008EE550 /* Frameworks */,
 				3DE689A81B1F5EB2008EE550 /* Resources */,
+				89B5AB65421DA0A653B4D987 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -213,6 +239,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3672B9BB5FDBAEB32833A742 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		89B5AB65421DA0A653B4D987 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3DE689A61B1F5EB2008EE550 /* Sources */ = {
@@ -345,6 +404,7 @@
 		};
 		3DE689CE1B1F5EB2008EE550 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0DF88A573A1ACD38AEFCA622 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "autolayer-第三方库/Info.plist";
@@ -355,6 +415,7 @@
 		};
 		3DE689CF1B1F5EB2008EE550 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D796FDDD46BE156F7272E00 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "autolayer-第三方库/Info.plist";
@@ -416,6 +477,7 @@
 				3DE689CF1B1F5EB2008EE550 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3DE689D01B1F5EB2008EE550 /* Build configuration list for PBXNativeTarget "autolayer-第三方库Tests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +486,7 @@
 				3DE689D21B1F5EB2008EE550 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
